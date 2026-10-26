@@ -14,6 +14,7 @@
   <a href="https://github.com/UlisesSB/UlumiGlow/releases/latest"><img src="https://img.shields.io/github/v/release/UlisesSB/UlumiGlow?style=flat-square&color=2f7bff&label=release" alt="Última versión"></a>
 </p>
 
+<p align="center">
 **UlumiGlow** convierte cualquier tira LED RGB común (de las baratas, no direccionables) en una iluminación **Ambilight** para tu computadora. Un programa liviano vive en la bandeja de Windows, mira una zona de la pantalla, calcula el color promedio y se lo manda por USB a un **ESP32-C3**, que maneja la tira con PWM a través de tres MOSFETs.
 
 La idea del proyecto es ser **simple**: pocos componentes, código corto y nada de configuración complicada.
@@ -26,7 +27,7 @@ UlumiGlow es gratuito y de código abierto. Si te sirve, puedes ayudarme a segui
 
 <sub>Cualquier aporte, grande o chico, se agradece. Una estrella en GitHub o reportar un error ayuda igual.</sub>
 
-</div>
+</p>
 
 ---
 
