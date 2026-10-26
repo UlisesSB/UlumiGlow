@@ -20,7 +20,7 @@ La idea del proyecto es ser **simple**: pocos componentes, código corto y nada 
 
 ### Apoya el proyecto
 
-USwap es gratuito y de código abierto. Si te sirve, puedes ayudarme a seguir mejorándolo:
+UlumiGlow es gratuito y de código abierto. Si te sirve, puedes ayudarme a seguir mejorándolo:
 
 **Alias bancario (Argentina): `uarodriguez.wb`** &nbsp;&middot;&nbsp; Titular: Ulises Agustin Rodriguez
 
