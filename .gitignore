@@ -1,37 +1,26 @@
-########################
-# Python (PC)
-########################
+# ---------- Python (app) ----------
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 *.log
-
-# PyInstaller
-build/
-dist/
-*.spec
-
-# Entornos virtuales
 venv/
+.venv/
 .env/
 
-########################
-# ESP32 / PlatformIO
-########################
+# PyInstaller / instalador
+app/build/
+app/dist/
+*.spec
+
+# ---------- ESP32 / PlatformIO ----------
 .pio/
 .vscode/
 
-########################
-# Binarios / Instaladores
-########################
+# ---------- Binarios (van en GitHub Releases) ----------
 *.exe
-*_Setup.exe
 *.bin
 *.elf
 
-########################
-# Sistema
-########################
+# ---------- Sistema ----------
 Thumbs.db
 Desktop.ini
 .DS_Store

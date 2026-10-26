@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<!-- UlumiGlow - esquema de conexión. Copyright (c) 2025-2026 Ulises Agustin Rodriguez - MIT -->
+<rect width="1200" height="720" rx="24" fill="#070d22"/>
+<defs><pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#13204a" stroke-width="1"/></pattern><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#9fb6e8"/></marker></defs>
+<rect x="1" y="1" width="1198" height="718" rx="24" fill="url(#g)" opacity=".6"/>
+<text x="60" y="62" fill="#e6efff" font-size="22" font-weight="700">UlumiGlow · Esquema de conexión</text>
+<text x="60" y="88" fill="#8ea3cc" font-size="13">ESP32-C3 → 3 MOSFET de canal N → tira LED RGB de 12 V (ánodo común)</text>
+<rect x="60" y="130" width="230" height="500" rx="16" fill="#0d1a44" stroke="#3d6fd6" stroke-width="2"/>
+<text x="175" y="170" fill="#e6efff" font-size="17" font-weight="700" text-anchor="middle">ESP32-C3</text>
+<text x="175" y="190" fill="#8ea3cc" font-size="12" text-anchor="middle">SuperMini</text>
+<rect x="40" y="380" width="34" height="56" rx="8" fill="#1b2b5e" stroke="#6f93e6" stroke-width="1.5"/>
+<text x="96" y="404" fill="#8ea3cc" font-size="12">USB-C</text><text x="96" y="420" fill="#8ea3cc" font-size="11">a la PC</text><text x="96" y="435" fill="#8ea3cc" font-size="11">(datos + 5 V)</text>
+<text x="276" y="195" fill="#e6efff" font-size="14" font-weight="600" text-anchor="end">GPIO4</text>
+<circle cx="290" cy="190" r="5" fill="#ff4d5e"/>
+<text x="276" y="345" fill="#e6efff" font-size="14" font-weight="600" text-anchor="end">GPIO5</text>
+<circle cx="290" cy="340" r="5" fill="#2ee26a"/>
+<text x="276" y="495" fill="#e6efff" font-size="14" font-weight="600" text-anchor="end">GPIO6</text>
+<circle cx="290" cy="490" r="5" fill="#3d8eff"/>
+<text x="276" y="585" fill="#e6efff" font-size="14" font-weight="600" text-anchor="end">GND</text><circle cx="290" cy="580" r="5" fill="#9fb6e8"/>
+<path d="M290 580H330V590" stroke="#9fb6e8" stroke-width="2" fill="none"/><path d="M330 590v10M316 600h28M321 606h18M326 612h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M290 190H340M420 190H562" stroke="#ff4d5e" stroke-width="2.5" fill="none"/>
+<rect x="340" y="179" width="80" height="22" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="380" y="170" fill="#e6efff" font-size="12" text-anchor="middle">R gate · 220 Ω</text>
+<circle cx="480" cy="190" r="4.5" fill="#ff4d5e"/>
+<path d="M480 190V208M480 252V264" stroke="#9fb6e8" stroke-width="2" fill="none"/>
+<rect x="469" y="208" width="22" height="44" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="500" y="235" fill="#8ea3cc" font-size="12">10 kΩ</text>
+<path d="M480 264v10M466 274h28M471 280h18M476 286h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M562 190H576M576 166V214" stroke="#9fb6e8" stroke-width="2.5" fill="none"/>
+<path d="M590 160V176" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 182V198" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 204V220" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 168H630V145M590 212H630V242M630 196H592" stroke="#9fb6e8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M630 196V212" stroke="#9fb6e8" stroke-width="2"/>
+<circle cx="583" cy="187" r="40" fill="none" stroke="#2b3f78" stroke-width="1.5"/>
+<text x="646" y="192" fill="#e6efff" font-size="13" font-weight="700">Q1</text><text x="646" y="208" fill="#8ea3cc" font-size="11">IRFZ44N</text>
+<text x="600" y="140" fill="#8ea3cc" font-size="10">D</text><text x="560" y="182" fill="#8ea3cc" font-size="10">G</text><text x="600" y="238" fill="#8ea3cc" font-size="10">S</text>
+<path d="M630 242v10M616 252h28M621 258h18M626 264h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M630 145H1000" stroke="#ff4d5e" stroke-width="2.5" fill="none"/>
+<path d="M290 340H340M420 340H562" stroke="#2ee26a" stroke-width="2.5" fill="none"/>
+<rect x="340" y="329" width="80" height="22" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="380" y="320" fill="#e6efff" font-size="12" text-anchor="middle">R gate · 220 Ω</text>
+<circle cx="480" cy="340" r="4.5" fill="#2ee26a"/>
+<path d="M480 340V358M480 402V414" stroke="#9fb6e8" stroke-width="2" fill="none"/>
+<rect x="469" y="358" width="22" height="44" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="500" y="385" fill="#8ea3cc" font-size="12">10 kΩ</text>
+<path d="M480 414v10M466 424h28M471 430h18M476 436h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M562 340H576M576 316V364" stroke="#9fb6e8" stroke-width="2.5" fill="none"/>
+<path d="M590 310V326" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 332V348" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 354V370" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 318H630V295M590 362H630V392M630 346H592" stroke="#9fb6e8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M630 346V362" stroke="#9fb6e8" stroke-width="2"/>
+<circle cx="583" cy="337" r="40" fill="none" stroke="#2b3f78" stroke-width="1.5"/>
+<text x="646" y="342" fill="#e6efff" font-size="13" font-weight="700">Q2</text><text x="646" y="358" fill="#8ea3cc" font-size="11">IRFZ44N</text>
+<text x="600" y="290" fill="#8ea3cc" font-size="10">D</text><text x="560" y="332" fill="#8ea3cc" font-size="10">G</text><text x="600" y="388" fill="#8ea3cc" font-size="10">S</text>
+<path d="M630 392v10M616 402h28M621 408h18M626 414h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M630 295H1000" stroke="#2ee26a" stroke-width="2.5" fill="none"/>
+<path d="M290 490H340M420 490H562" stroke="#3d8eff" stroke-width="2.5" fill="none"/>
+<rect x="340" y="479" width="80" height="22" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="380" y="470" fill="#e6efff" font-size="12" text-anchor="middle">R gate · 220 Ω</text>
+<circle cx="480" cy="490" r="4.5" fill="#3d8eff"/>
+<path d="M480 490V508M480 552V564" stroke="#9fb6e8" stroke-width="2" fill="none"/>
+<rect x="469" y="508" width="22" height="44" rx="4" fill="#0b1433" stroke="#9fb6e8" stroke-width="2"/>
+<text x="500" y="535" fill="#8ea3cc" font-size="12">10 kΩ</text>
+<path d="M480 564v10M466 574h28M471 580h18M476 586h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M562 490H576M576 466V514" stroke="#9fb6e8" stroke-width="2.5" fill="none"/>
+<path d="M590 460V476" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 482V498" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 504V520" stroke="#9fb6e8" stroke-width="3"/>
+<path d="M590 468H630V445M590 512H630V542M630 496H592" stroke="#9fb6e8" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+<path d="M630 496V512" stroke="#9fb6e8" stroke-width="2"/>
+<circle cx="583" cy="487" r="40" fill="none" stroke="#2b3f78" stroke-width="1.5"/>
+<text x="646" y="492" fill="#e6efff" font-size="13" font-weight="700">Q3</text><text x="646" y="508" fill="#8ea3cc" font-size="11">IRFZ44N</text>
+<text x="600" y="440" fill="#8ea3cc" font-size="10">D</text><text x="560" y="482" fill="#8ea3cc" font-size="10">G</text><text x="600" y="538" fill="#8ea3cc" font-size="10">S</text>
+<path d="M630 542v10M616 552h28M621 558h18M626 564h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M630 445H1000" stroke="#3d8eff" stroke-width="2.5" fill="none"/>
+<rect x="1000" y="70" width="130" height="410" rx="14" fill="#0d1a44" stroke="#3d6fd6" stroke-width="2"/>
+<text x="1065" y="512" fill="#e6efff" font-size="14" font-weight="700" text-anchor="middle">Tira LED RGB</text>
+<text x="1065" y="530" fill="#8ea3cc" font-size="12" text-anchor="middle">12 V · no direccionable</text>
+<circle cx="1130" cy="100" r="5" fill="#ffcc33"/><text x="1114" y="105" text-anchor="end" fill="#e6efff" font-size="15" font-weight="700">+12V</text>
+<circle cx="1000" cy="145" r="5" fill="#ff4d5e"/><text x="1018" y="150" fill="#e6efff" font-size="15" font-weight="700">R</text>
+<circle cx="1000" cy="295" r="5" fill="#2ee26a"/><text x="1018" y="300" fill="#e6efff" font-size="15" font-weight="700">G</text>
+<circle cx="1000" cy="445" r="5" fill="#3d8eff"/><text x="1018" y="450" fill="#e6efff" font-size="15" font-weight="700">B</text>
+<rect x="1092" y="130" width="18" height="320" rx="9" fill="url(#ledg)"/>
+<defs><linearGradient id="ledg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff4d5e"/><stop offset=".5" stop-color="#2ee26a"/><stop offset="1" stop-color="#3d8eff"/></linearGradient></defs>
+<rect x="880" y="590" width="250" height="90" rx="14" fill="#0d1a44" stroke="#3d6fd6" stroke-width="2"/>
+<text x="900" y="620" fill="#e6efff" font-size="14" font-weight="700">Fuente ATX de la PC</text>
+<text x="900" y="640" fill="#8ea3cc" font-size="12">(o fuente externa de 12 V)</text>
+<text x="1000" y="667" fill="#ffcc33" font-size="12" font-weight="600">+12V amarillo</text>
+<text x="900" y="667" fill="#e6efff" font-size="12" font-weight="600">GND negro</text>
+<path d="M1130 640H1160V100H1130" stroke="#ffcc33" stroke-width="2.5" fill="none"/>
+<path d="M880 640H840V652" stroke="#9fb6e8" stroke-width="2" fill="none"/><path d="M840 652v10M826 662h28M831 668h18M836 674h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/>
+<rect x="330" y="630" width="470" height="54" rx="12" fill="#0b1433" stroke="#2b3f78"/>
+<g transform="translate(350 640)"><path d="M10 0v10M-4 10h28M1 16h18M6 22h8" stroke="#9fb6e8" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+<text x="384" y="652" fill="#e6efff" font-size="13" font-weight="600">Masa común</text>
+<text x="384" y="671" fill="#8ea3cc" font-size="12">GND del ESP32, GND de la fuente y los Source van unidos.</text>
+</svg>

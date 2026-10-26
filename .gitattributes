@@ -1,0 +1,13 @@
+# Normaliza finales de línea
+* text=auto
+
+# Archivos de Windows con CRLF
+*.bat text eol=crlf
+*.iss text eol=crlf
+
+# Binarios
+*.png binary
+*.jpg binary
+*.ico binary
+*.bmp binary
+*.woff binary

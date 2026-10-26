@@ -1,0 +1,8 @@
+# UlumiGlow - dependencias (Windows 10/11, Python 3.10 o superior)
+pywebview>=5.0        # ventana de configuración (usa WebView2, incluido en Windows 10/11)
+pystray>=0.19         # ícono en la bandeja
+mss>=9.0              # captura de pantalla
+numpy>=1.24           # promedio de color y análisis de audio
+pyserial>=3.5         # comunicación USB con el ESP32
+Pillow>=10.0          # íconos y miniaturas
+PyAudioWPatch>=0.2.12 # captura del audio de la PC (WASAPI loopback)

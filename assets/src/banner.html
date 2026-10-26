@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* Banner UlumiGlow. Parámetros: ?en (inglés)  ?social (1280x640 para la vista previa de GitHub) */
+/* Requiere la fuente Inter instalada (https://github.com/rsms/inter) */
+@font-face{font-family:IDisp;src:local("Inter Display Bold"),local("InterDisplay-Bold")}
+@font-face{font-family:IDisp;font-weight:500;src:local("Inter Display Medium"),local("InterDisplay-Medium")}
+@font-face{font-family:IText;src:local("Inter Medium"),local("Inter-Medium")}
+:root{--navy:#050a1c;--blue:#2f7bff;--ice:#9fcbff}
+html,body{margin:0;background:var(--navy);overflow:hidden}
+.c{position:relative;width:1200px;height:400px;overflow:hidden;background:
+  radial-gradient(80% 120% at 28% 60%, #0d2161 0%, #071236 45%, var(--navy) 80%)}
+.social .c{width:1280px;height:640px}
+/* tira LED arriba, como el Ambilight sobre el monitor */
+.strip{position:absolute;left:6%;right:6%;top:0;height:6px;border-radius:0 0 6px 6px;
+  background:linear-gradient(90deg,#ff8a3d,#f2335c 22%,#b04cff 40%,#2f7bff 58%,#22c3ee 76%,#45e070)}
+.spill{position:absolute;left:4%;right:4%;top:-60px;height:220px;filter:blur(55px);opacity:.55;
+  background:linear-gradient(90deg,#ff8a3d,#f2335c 22%,#7a4dff 40%,#2f7bff 58%,#22c3ee 76%,#45e070)}
+.grid{position:absolute;inset:0;opacity:.08;background-image:linear-gradient(#9fcbff 1px,transparent 1px),linear-gradient(90deg,#9fcbff 1px,transparent 1px);background-size:40px 40px;
+  -webkit-mask-image:radial-gradient(60% 80% at 30% 60%,#000,transparent)}
+.mark-wrap{position:absolute;left:70px;top:58px;width:300px;height:300px}
+.mark-glow{position:absolute;inset:30px;border-radius:50%;background:radial-gradient(closest-side,rgba(47,123,255,.55),transparent);filter:blur(30px)}
+.mark{position:absolute;inset:-60px;width:420px;height:420px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.45))}
+.text{position:absolute;left:400px;top:108px;color:#fff}
+h1{font:700 104px/1 IDisp;letter-spacing:-3px;margin:0}
+h1 span{background:linear-gradient(90deg,#8fc3ff,#2f7bff 60%,#22c3ee);-webkit-background-clip:text;color:transparent}
+p{font:500 30px/1.2 IDisp;color:var(--ice);margin:18px 0 26px;letter-spacing:-.2px}
+.chips{display:flex;gap:10px}
+.chip{font:14px/1 IText;letter-spacing:.6px;text-transform:uppercase;color:#cfe3ff;padding:9px 14px;border-radius:999px;
+  background:rgba(255,255,255,.06);border:1px solid rgba(160,200,255,.22);backdrop-filter:blur(6px)}
+.by{position:absolute;right:34px;bottom:24px;font:14px IText;color:rgba(190,215,255,.55);letter-spacing:.4px}
+/* variante social */
+.social .mark-wrap{left:50%;top:70px;width:300px;height:300px;margin-left:-150px}
+.social .text{left:0;right:0;top:372px;text-align:center}
+.social h1{font-size:96px}.social p{margin:14px 0 22px}
+.social .chips{justify-content:center}
+</style></head><body>
+<div class="c"><div class="spill"></div><div class="strip"></div><div class="grid"></div>
+<div class="mark-wrap"><div class="mark-glow"></div><img class="mark" src="logo-mark.svg"></div>
+<div class="text"><h1>Ulumi<span>Glow</span></h1><p id="tag">Sistema Ambilight para PC</p>
+<div class="chips"><span class="chip">ESP32-C3</span><span class="chip">Ambilight</span><span class="chip" id="c2">Color fijo</span><span class="chip">Audio</span></div></div>
+<div class="by" id="by">por Ulises Agustin Rodriguez</div></div>
+<script>
+const q=location.search;
+if(q.includes('en')){tag.textContent='Ambilight system for your PC';c2.textContent='Solid color';by.textContent='by Ulises Agustin Rodriguez'}
+if(q.includes('social'))document.body.className='social';
+</script></body></html>

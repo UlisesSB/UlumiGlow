@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+/* Ícono UlumiGlow: U multicolor sobre fondo azul. ?shape=round para versión con esquinas */
+html,body{margin:0;width:1024px;height:1024px;background:transparent;overflow:hidden}
+.tile{position:absolute;inset:0;overflow:hidden;
+  background:
+    radial-gradient(60% 55% at 50% 44%, #2a63e6 0%, #1840b0 38%, #0c2266 72%, #071338 100%);}
+.round .tile{inset:40px;border-radius:220px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.10), inset 0 6px 20px rgba(255,255,255,.12)}
+.glow{position:absolute;left:50%;top:56%;width:640px;height:520px;transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side, rgba(130,190,255,.45), rgba(80,140,255,.12) 60%, transparent);filter:blur(30px)}
+.mark{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 26px 34px rgba(2,8,30,.55))}
+.round .mark{left:-96px;top:-90px;width:1216px;height:1216px}
+</style></head><body><div class="tile"><div class="glow"></div></div><img class="mark" src="logo-mark.svg">
+<script>if(location.search.includes('round'))document.body.className='round'</script></body></html>
