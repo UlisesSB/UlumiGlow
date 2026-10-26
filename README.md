@@ -18,6 +18,18 @@
 
 La idea del proyecto es ser **simple**: pocos componentes, código corto y nada de configuración complicada.
 
+### Apoya el proyecto
+
+USwap es gratuito y de código abierto. Si te sirve, puedes ayudarme a seguir mejorándolo:
+
+**Alias bancario (Argentina): `uarodriguez.wb`** &nbsp;&middot;&nbsp; Titular: Ulises Agustin Rodriguez
+
+<sub>Cualquier aporte, grande o chico, se agradece. Una estrella en GitHub o reportar un error ayuda igual.</sub>
+
+</div>
+
+---
+
 ## Características
 
 - **Ambilight**: la tira copia el color de la parte de la pantalla que elijas.
